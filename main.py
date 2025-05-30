@@ -60,7 +60,7 @@ def send_message():
         chat_area.config(state='normal')
         response = get_response(user_msg)
         chat_area.insert(tk.END, "You: " + user_msg + "\n")
-        chat_area.insert(tk.END, "Bot: " + response + "\n\n")
+        chat_area.insert(tk.END, "🤖: " + response + "\n\n")
         chat_area.insert(tk.END, "Bot is Shutting Down...\n")
         chat_area.config(state='disabled')
         chat_area.see(tk.END)
@@ -72,7 +72,7 @@ def send_message():
     chat_area.config(state='normal')
     chat_area.insert(tk.END, "You: " + user_msg + "\n")
     response = get_response(user_msg)
-    chat_area.insert(tk.END, "Bot: " + response + "\n\n")
+    chat_area.insert(tk.END, "🤖: " + response + "\n\n")
     chat_area.config(state='disabled')
     chat_area.see(tk.END)
     user_entry.delete(0, tk.END)
@@ -93,7 +93,7 @@ chat_area = scrolledtext.ScrolledText(root, wrap=tk.WORD, font=("Arial", 11),bac
 chat_area.pack(padx=10, pady=(0, 10), fill=tk.BOTH, expand=True)
 
 # Preload welcome + FAQ questions
-chat_area.insert(tk.END, "Bot: Hello! I'm your Bright Smile Dental Chatbot. How can I assist you today?\n\n")
+chat_area.insert(tk.END, "🤖: Hello! I'm your Bright Smile Dental Chatbot. How can I assist you today?\n\n")
 chat_area.insert(tk.END, "You can ask me questions like:\n")
 chat_area.insert(tk.END, "• What are your working hours?\n")
 chat_area.insert(tk.END, "• Where are you located?\n")
