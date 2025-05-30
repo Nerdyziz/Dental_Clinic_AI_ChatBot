@@ -4,7 +4,7 @@ from PIL import Image, ImageTk
 from groq import Groq
 import os
 
-client = Groq(api_key=os.getenv("GROQ_API_KEY"))  # Ensure you have set your GROQ_API_KEY in your environment variables
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))  # Ensure you have set your GROQ_API_KEY in your environment variables//
 
 messages = [{"role": "system", "content": "You are a helpful,friendly and creative dental clinic assistant."},
             {"role": "user", "content": "what are your working hours"},
