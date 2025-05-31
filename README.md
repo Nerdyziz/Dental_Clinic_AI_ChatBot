@@ -11,22 +11,27 @@ Follow these steps, and I promise no cavities! 🪥
 
 ```bash
 # Step 1: Clone the repository
-git clone https://github.com/Nerdyziz/Dental_Clinic_AI_ChatBot
-cd dental-chatbot
+git clone https://github.com/Nerdyziz/Dental_Clinic_AI_ChatBot.git
+cd Dental_Clinic_AI_ChatBot
 
-# Step 2: (Optional but recommended) Create a virtual environment
-python -m venv venv
-source venv/bin/activate   # On Windows use `venv\Scripts\activate`
-
-# Step 3: Install dependencies
+# Step 2: Install dependencies
 pip install -r requirements.txt
 
-# Step 4: Set your Groq API key
-# (In your terminal or .env file)
-export GROQ_API_KEY=your_actual_groq_api_key_here
+# Step 3: Set your Groq API key
+To keep things secure and professional, I’ve used an environment variable for the Groq API key.
 
-# Step 5: Run the chatbot
-python dental_bot.py
+### Here’s what you need to do:
+1. Go to [https://console.groq.com](https://console.groq.com) and sign up (it’s free).
+2. Click on **API Keys**, then **Generate Key**.
+3. Set it in your terminal:
+
+**For Mac/Linux:**
+```bash
+export GROQ_API_KEY=your_key_here
+
+
+# Step 4: Run the chatbot
+python main.py
 ```
 
 ---
@@ -118,26 +123,19 @@ I’ve built this thinking like a real developer — future-proofing it with Gro
 ## 🤝 Dear Interviewer...
 
 I hope you enjoyed this creative walkthrough. I’ve poured a lot of thought into making this chatbot smart, friendly, and aligned with real-world clinic needs.
-It’s not just a project — it’s a reflection of how I think: with **clarity, creativity, and a little bit of humor**. I look forward to discussing it with you!
+It’s not just a project — it’s a reflection of how I think: with **clarity, creativity, and a little bit of humor**. I look forward to discussing it with you!.
+Honestly speaking taken some help from ChatGPT regarding integration of Groq API as I have just started with python. But all the other things like logic, GUI Interface, its all original like my Teeth! 😁
 
 ---
 
 ## 📦 File Structure
 
 ```
-dental-chatbot/
-├── dental_bot.py       # Main Python file
+Dental_Clinic_AI_ChatBot/
+├── main.py       # Main Python file
 ├── requirements.txt    # To install dependencies
 └── README.md           # You're reading this!
 ```
-
----
-
-## 💭 Future Ideas (Because I'm Always Thinking Ahead)
-
-* Add voice input/output 🎙️
-* Connect it to a real booking system or calendar 📅
-* Make it web-based using Flask or React 🌐
 
 ---
 
@@ -145,8 +143,6 @@ dental-chatbot/
 If you smiled while reading this, the bot’s already done its job 😉
 
 Stay awesome,
-**Aziz 🧠🦷**
+**Aziz Sunelwala [RBU CSE] 🧠🦷**
 
 ---
-
-Let me know if you'd like the `requirements.txt` or any changes to the wording!
