@@ -59,9 +59,9 @@ def send_message():
     if user_msg.lower() in ["exit", "quit", "bye", "goodbye", "see you later", "thanks", "thank you","farewell","stop"]:
         chat_area.config(state='normal')
         response = get_response(user_msg)
-        chat_area.insert(tk.END, "You: " + user_msg + "\n")
-        chat_area.insert(tk.END, "🤖: " + response + "\n\n")
-        chat_area.insert(tk.END, "Bot is Shutting Down...\n")
+        chat_area.insert(tk.END, "You: " + user_msg + "\n\n")
+        chat_area.insert(tk.END, "🤖: " + response + "\n\n\n")
+        chat_area.insert(tk.END, "Bot is Shutting Down...\n\n")
         chat_area.config(state='disabled')
         chat_area.see(tk.END)
         user_entry.delete(0, tk.END)
@@ -70,9 +70,9 @@ def send_message():
         return # Close the app after 10 seconds
 
     chat_area.config(state='normal')
-    chat_area.insert(tk.END, "You: " + user_msg + "\n")
+    chat_area.insert(tk.END, "You: " + user_msg + "\n\n")
     response = get_response(user_msg)
-    chat_area.insert(tk.END, "🤖: " + response + "\n\n")
+    chat_area.insert(tk.END, "🤖: " + response + "\n\n\n")
     chat_area.config(state='disabled')
     chat_area.see(tk.END)
     user_entry.delete(0, tk.END)
